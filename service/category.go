@@ -1,12 +1,13 @@
 package service
 
 import (
-	"strings"
-
-	"github.com/Hamse/final_project/Back_end/dtos"
-	"github.com/Hamse/final_project/Back_end/models"
-	"github.com/Hamse/final_project/Back_end/repository"
+	"github.com/Hamse/final_project/Back_end/Back_end/dtos"
+	"github.com/Hamse/final_project/Back_end/Back_end/models"
+	"github.com/Hamse/final_project/Back_end/Back_end/repository"
 )
+
+// "os/user"
+// "strings"
 
 type CategoryService struct {
 	repo *repository.CategoryRepo
@@ -17,10 +18,10 @@ func RegisterCategoryService(repo *repository.CategoryRepo) *CategoryService {
 }
 
 func (svc CategoryService) AddCategory(data *dtos.AddCategorydtos) (int, error) {
-	name := strings.ToLower(data.CategoryName)
+	// name := strings.ToLower(data.CategoryName)
 
 	category := models.Category{
-		CategoryName: name,
+		CategoryName: data.CategoryName,
 	}
 
 	err := svc.repo.CreateCategory(category)
