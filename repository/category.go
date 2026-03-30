@@ -1,7 +1,7 @@
 package repository
 
 import (
-	"github.com/Hamse/final_project/Back_end/models"
+	"github.com/Hamse/final_project/Back_end/Back_end/models"
 	"gorm.io/gorm"
 )
 

@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/Hamse/final_project/Back_end/dtos"
-	"github.com/Hamse/final_project/Back_end/infra"
-	"github.com/Hamse/final_project/Back_end/repository"
-	"github.com/Hamse/final_project/Back_end/service"
+	"github.com/Hamse/final_project/Back_end/Back_end/dtos"
+	"github.com/Hamse/final_project/Back_end/Back_end/infra"
+	"github.com/Hamse/final_project/Back_end/Back_end/repository"
+	"github.com/Hamse/final_project/Back_end/Back_end/service"
 	"github.com/gin-gonic/gin"
 )
 

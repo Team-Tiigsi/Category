@@ -1,8 +1,8 @@
 package routes
 
 import (
-    "github.com/Hamse/final_project/Back_end/handler"
-    "github.com/gin-gonic/gin"
+	"github.com/Hamse/final_project/Back_end/Back_end/handler"
+	"github.com/gin-gonic/gin"
 )
 
 func RegisterCategoryRoutes(r *gin.Engine) {

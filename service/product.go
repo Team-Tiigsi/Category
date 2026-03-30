@@ -3,9 +3,9 @@ package service
 import (
 	"errors"
 
-	"github.com/Hamse/final_project/Back_end/dtos"
-	"github.com/Hamse/final_project/Back_end/models"
-	"github.com/Hamse/final_project/Back_end/repository"
+	"github.com/Hamse/final_project/Back_end/Back_end/dtos"
+	"github.com/Hamse/final_project/Back_end/Back_end/models"
+	"github.com/Hamse/final_project/Back_end/Back_end/repository"
 )
 
 type ProductService struct {

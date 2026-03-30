@@ -1,7 +1,7 @@
 package repository
 
 import (
-	"github.com/Hamse/final_project/Back_end/models"
+	"github.com/Hamse/final_project/Back_end/Back_end/models"
 	"gorm.io/gorm"
 )
 
@@ -13,6 +13,6 @@ func RegisterProductRepo(db *gorm.DB) ProductRepo {
     return ProductRepo{DB: db}
 }
 
-func (r *ProductRepo) AddProduct(product *models.Product) error {
-    return r.DB.Create(product).Error
+func (repo *ProductRepo) AddProduct(product *models.Product) error {
+    return repo.DB.Create(product).Error
 }
