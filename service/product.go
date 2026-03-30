@@ -26,18 +26,6 @@ func (s *ProductService) AddProduct(dto *dtos.AddProductdtos) (uint, error) {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 func (svc *CategoryService) GetProductCountPerCategory() ([]map[string]interface{}, error) {
     return svc.repo.GetProductCountPerCategory()
 }
